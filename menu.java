@@ -1,8 +1,11 @@
+
 import java.util.Scanner;
 
 public class menu {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        metodos m = new metodos();
         int opt = 0, D = 0;
         boolean bandera = true;
         while (bandera) {
@@ -26,12 +29,12 @@ public class menu {
                     break;
                 case 3:
                     System.out.println("INGRESE LA DIMENSION DE LA MATRIZ ");
-                    sc.nextInt();
-                    ObjLibreria[][] ML = new ObjLibreria[D][D];
+                    D = sc.nextInt();
+                    ObjLibreria[][] ML = m.LlenarMatriz(D);
                     break;
 
                 default:
-                System.out.println("Hasta pronto");
+                    System.out.println("Hasta pronto");
                     break;
             }
         }
