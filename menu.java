@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class menu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int opt = 0;
+        int opt = 0, D = 0;
         boolean bandera = true;
         while (bandera) {
             System.out.println("Bienvenido al proyecto");
@@ -25,6 +25,9 @@ public class menu {
                 case 2:
                     break;
                 case 3:
+                    System.out.println("INGRESE LA DIMENSION DE LA MATRIZ ");
+                    sc.nextInt();
+                    ObjLibreria[][] ML = new ObjLibreria[D][D];
                     break;
 
                 default:
